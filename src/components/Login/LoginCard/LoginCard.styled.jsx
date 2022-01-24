@@ -3,10 +3,10 @@ import styled from 'styled-components';
 export default styled.div`
   grid-area: content;
 
-  max-width: 83vw;
-  height: 55vh;
+  max-width: 97vw;
+  height: 58vh;
   margin: 20px auto;
-  padding: 100px;
+  padding: 100px 0px;
 
   border-radius: 10px;
 

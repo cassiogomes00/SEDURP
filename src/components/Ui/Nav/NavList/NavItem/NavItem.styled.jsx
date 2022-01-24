@@ -4,5 +4,5 @@ export default styled.li`
   color: white;
   text-decoration: none;
 
-  padding-right: 10px; ;
+  padding-right: 50px; ;
 `;

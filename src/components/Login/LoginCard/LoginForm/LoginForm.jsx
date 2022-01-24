@@ -1,6 +1,7 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
 import { login } from '../../../../store/Login/Login.actions';
+import ButtonRowStyled from './ButtonRow.styled';
 import Wrapper from './LoginForm.styled';
 import LoginFormInput from './LoginFormInput/LoginFormInput';
 import LoginFormSubmit from './LoginFormSubmt/LoginFormSubmit';
@@ -39,7 +40,10 @@ export default function LoginForm() {
       <label htmlFor="login-pwd">Senha</label>
       <LoginFormInput type="password" name="login-pwd" />
 
-      <LoginFormSubmit />
+      <ButtonRowStyled>
+        <LoginFormSubmit />
+        <a>Esqueci minha senha</a>
+      </ButtonRowStyled>
     </Wrapper>
   );
 }

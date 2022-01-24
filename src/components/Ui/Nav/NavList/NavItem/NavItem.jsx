@@ -5,7 +5,7 @@ import Wrapper from './NavItem.styled';
 export default function NavItem({ item }) {
   return (
     <Link to={item.path}>
-      <Wrapper>{item.name}</Wrapper>
+      <Wrapper>{`${item.name} >`}</Wrapper>
     </Link>
   );
 }

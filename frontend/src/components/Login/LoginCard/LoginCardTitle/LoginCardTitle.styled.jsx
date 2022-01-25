@@ -5,16 +5,12 @@ export default styled.h2`
 
   margin: auto;
   margin-bottom: 50px;
-  max-width: 50%;
+  width: 35%;
   padding-bottom: 10px;
 
   border-bottom: 1px dotted grey;
 
-  @media (min-width: 768px) and (max-width: 1023px) {
-    max-width: 60%;
-  }
-
-  @media (max-width: 767px) {
-    max-width: 80%;
+  @media (max-width: 900px) {
+    width: 50%;
   }
 `;

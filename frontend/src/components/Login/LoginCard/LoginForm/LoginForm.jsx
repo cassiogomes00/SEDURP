@@ -1,5 +1,6 @@
 import React, { useEffect } from 'react';
 import { useDispatch, useSelector } from 'react-redux';
+import { Link, useNavigate } from 'react-router-dom';
 import { login } from '../../../../store/Login/Login.actions';
 import ButtonRowStyled from './ButtonRow.styled';
 import Wrapper from './LoginForm.styled';
@@ -7,6 +8,7 @@ import LoginFormInput from './LoginFormInput/LoginFormInput';
 import LoginFormSubmit from './LoginFormSubmt/LoginFormSubmit';
 
 export default function LoginForm() {
+  const navigate = useNavigate();
   const dispatch = useDispatch();
 
   const loginInfo = useSelector((state) => {
@@ -23,7 +25,7 @@ export default function LoginForm() {
     }
 
     if (loginStatus.token !== null) {
-      alert('Usuário logado com sucesso!');
+      navigate('/dashboard');
     }
   }, [loginStatus]);
 
@@ -42,7 +44,9 @@ export default function LoginForm() {
 
       <ButtonRowStyled>
         <LoginFormSubmit />
-        <a>Esqueci minha senha</a>
+        <Link to="">
+          <a>Esqueci minha senha</a>
+        </Link>
       </ButtonRowStyled>
     </Wrapper>
   );

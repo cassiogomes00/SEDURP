@@ -9,4 +9,10 @@ export default styled.input`
 
   border-style: none;
   border-radius: 5px;
+
+  transition: 200ms ease-in-out;
+
+  :focus {
+    background-color: #00904634;
+  }
 `;

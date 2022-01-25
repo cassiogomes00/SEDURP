@@ -17,5 +17,5 @@ export default function LoginFormInput({ type, name }) {
     );
   };
 
-  return <Wrapper type={type} name={name} required onKeyUp={handleInput} />;
+  return <Wrapper type={type} name={name} onKeyUp={handleInput} required />;
 }

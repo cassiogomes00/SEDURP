@@ -4,5 +4,11 @@ export default styled.li`
   color: white;
   text-decoration: none;
 
-  padding-right: 50px; ;
+  padding: 20px;
+
+  transition: 200ms;
+
+  :hover {
+    background-color: #00a14e;
+  }
 `;

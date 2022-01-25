@@ -3,6 +3,7 @@ const DEFAULT_USERPWD = 'admin';
 
 export default function doLogin(user) {
   const { username, password } = user;
+
   if (username !== DEFAULT_USERNAME) {
     throw new Error('A conta não existe!');
   }

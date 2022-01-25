@@ -3,7 +3,7 @@ import styled from 'styled-components';
 export default styled.input`
   width: 150px;
 
-  padding: 10px;
+  padding: 15px;
 
   color: white;
   background-color: #009045;
@@ -12,7 +12,13 @@ export default styled.input`
   border-style: none;
   border-radius: 5px;
 
-  @media (max-width: 767px) {
+  transition: 200ms;
+
+  :hover {
+    background-color: #00a14e;
+  }
+
+  @media (max-width: 600px) {
     width: 100%;
   }
 `;

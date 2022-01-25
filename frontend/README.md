@@ -1,3 +1,0 @@
-# SEDURP
-
-<!-- TO-DO README -->

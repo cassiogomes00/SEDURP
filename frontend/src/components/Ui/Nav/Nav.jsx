@@ -3,8 +3,8 @@ import Wrapper from './Nav.styled';
 import NavList from './NavList/NavList';
 
 const DEFAULT_NAV_ITEMS = [
-  { name: 'ALUNOS', path: '/alunos' },
-  { name: 'ADMINISTRATIVO', path: '/administrativo' },
+  { name: 'LOGIN', path: '/' },
+  { name: 'SOLICITAR ESTÁGIO', path: '/solicitacao-estagio' },
 ];
 
 export default function Nav() {
